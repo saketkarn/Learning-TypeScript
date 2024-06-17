@@ -5,10 +5,11 @@ var User = {
     email: "saket@gmail.com",
     isActive: true
 };
-function createUser(_a) {
-    var string = _a.name, boolean = _a.isPaid;
-}
-createUser({ name: "Saket", isPaid: false });
+// function createUser({name:string, isPaid:boolean}){
+// }
+// createUser({name:"Saket",isPaid:false})
 function createCourse() {
     return { name: "Saket", price: 369 };
 }
+function createUser(user) { }
+createUser({ name: "Saket", email: "sak@gmail.com", isActive: true });
