@@ -13,3 +13,10 @@ function createCourse() {
 }
 function createUser(user) { }
 createUser({ name: "Saket", email: "sak@gmail.com", isActive: true });
+var saketUser = {
+    _id: "12345",
+    name: "Saket",
+    email: "saketkarn38@gmail.com",
+    isActive: true
+};
+saketUser.email = "s@gmail.com";
