@@ -10,7 +10,7 @@
 
 class newUser{
 
-    private _courseCount=1
+    protected _courseCount=1
 
     readonly city:string="Patna"
     constructor(
@@ -41,6 +41,13 @@ class newUser{
         }
     }
 
+}
+
+class childUser extends newUser{
+    isFamily:boolean=true
+    changeCourseCount(){
+        this._courseCount=4 //able to access the protected member, protected members can be accessed in the class they are extended
+    }
 }
 
 const karn = new newUser("saket","sak@sa.com")
